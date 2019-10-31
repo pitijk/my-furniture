@@ -1,0 +1,1 @@
+export const ADD_NEW_FURNITURE = "ADD_NEW_FURNITURE";
