@@ -5,7 +5,14 @@ const Carousel = props => {
   return (
     <div className="carousel">
       {props.collection.map(({ name, images }) => {
-        return <img key={name} alt={name} src={images[0]} />;
+        return (
+          <img
+            className="carousel__card"
+            key={name}
+            alt={name}
+            src={images[0]}
+          />
+        );
       })}
     </div>
   );
