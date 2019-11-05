@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/my-furnitures/static/css/main.8e9461da.chunk.css",
-    "main.js": "/my-furnitures/static/js/main.abd0fae2.chunk.js",
-    "main.js.map": "/my-furnitures/static/js/main.abd0fae2.chunk.js.map",
+    "main.js": "/my-furnitures/static/js/main.9d938ca1.chunk.js",
+    "main.js.map": "/my-furnitures/static/js/main.9d938ca1.chunk.js.map",
     "runtime-main.js": "/my-furnitures/static/js/runtime-main.1feed7ce.js",
     "runtime-main.js.map": "/my-furnitures/static/js/runtime-main.1feed7ce.js.map",
     "static/js/2.6b320b56.chunk.js": "/my-furnitures/static/js/2.6b320b56.chunk.js",
     "static/js/2.6b320b56.chunk.js.map": "/my-furnitures/static/js/2.6b320b56.chunk.js.map",
     "index.html": "/my-furnitures/index.html",
-    "precache-manifest.56b18edbbab062eac64c5c8f031c3a0f.js": "/my-furnitures/precache-manifest.56b18edbbab062eac64c5c8f031c3a0f.js",
+    "precache-manifest.241a2a6098026dcbfd2bc8615a94043b.js": "/my-furnitures/precache-manifest.241a2a6098026dcbfd2bc8615a94043b.js",
     "service-worker.js": "/my-furnitures/service-worker.js",
     "static/css/main.8e9461da.chunk.css.map": "/my-furnitures/static/css/main.8e9461da.chunk.css.map"
   },
@@ -16,6 +16,6 @@
     "static/js/runtime-main.1feed7ce.js",
     "static/js/2.6b320b56.chunk.js",
     "static/css/main.8e9461da.chunk.css",
-    "static/js/main.abd0fae2.chunk.js"
+    "static/js/main.9d938ca1.chunk.js"
   ]
 }
