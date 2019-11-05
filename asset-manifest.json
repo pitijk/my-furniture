@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/my-furnitures/static/css/main.d10686e0.chunk.css",
+    "main.js": "/my-furnitures/static/js/main.98911a6e.chunk.js",
+    "main.js.map": "/my-furnitures/static/js/main.98911a6e.chunk.js.map",
+    "runtime-main.js": "/my-furnitures/static/js/runtime-main.cac27fd7.js",
+    "runtime-main.js.map": "/my-furnitures/static/js/runtime-main.cac27fd7.js.map",
+    "static/js/2.3faa08a6.chunk.js": "/my-furnitures/static/js/2.3faa08a6.chunk.js",
+    "static/js/2.3faa08a6.chunk.js.map": "/my-furnitures/static/js/2.3faa08a6.chunk.js.map",
+    "index.html": "/my-furnitures/index.html",
+    "precache-manifest.2d8bbd33c9ef1b2dd45990a700d67cd7.js": "/my-furnitures/precache-manifest.2d8bbd33c9ef1b2dd45990a700d67cd7.js",
+    "service-worker.js": "/my-furnitures/service-worker.js",
+    "static/css/main.d10686e0.chunk.css.map": "/my-furnitures/static/css/main.d10686e0.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cac27fd7.js",
+    "static/js/2.3faa08a6.chunk.js",
+    "static/css/main.d10686e0.chunk.css",
+    "static/js/main.98911a6e.chunk.js"
+  ]
+}
