@@ -1,54 +1,31 @@
 import "../sass/index.scss";
 
 import React from "react";
-import { connect } from "react-redux";
-import Carousel from "./Carousel";
+import { Router, Route, Switch } from "react-router-dom";
+import history from "../history";
+
 import Footer from "./Footer";
+import HomePage from "./HomePage";
+import Product from "./Product";
+import TermsOfService from "./TermsOfService";
+import PrivacyPolicy from "./PrivacyPolicy";
+import ReturnPolicy from "./ReturnPolicy";
 
 const App = props => {
-  let fisrtSection;
-  const renderFurnitures = () => {
-    return props.furnitures.map(({ type, collection }, i) => {
-      if (i === 0) {
-        return (
-          <section ref={el => (fisrtSection = el)} key={type}>
-            <h2 className="section__title">{type}</h2>
-            <Carousel collection={collection} />
-          </section>
-        );
-      } else {
-        return (
-          <section key={type}>
-            <h2 className="section__title">{type}</h2>
-            <Carousel collection={collection} />
-          </section>
-        );
-      }
-    });
-  };
-
   return (
     <>
-      <main>
-        <div className="title">
-          <h1>my</h1>
-          <h1>furniture.</h1>
-        </div>
-        <i
-          onClick={() =>
-            fisrtSection.scrollIntoView({ behavior: "smooth", block: "start" })
-          }
-          className="fas fa-angle-double-down fa-4x"
-        ></i>
-      </main>
-      {renderFurnitures()}
-      <Footer />
+      <Router history={history}>
+        <Switch>
+          <Route path="/" exact component={HomePage} />
+          <Route path="/terms-of-service" exact component={TermsOfService} />
+          <Route path="/privacy-policy" exact component={PrivacyPolicy} />
+          <Route path="/return-policy" exact component={ReturnPolicy} />
+          <Route path="/:type/:name" component={Product} />
+        </Switch>
+        <Footer />
+      </Router>
     </>
   );
 };
 
-const mapStateToProps = state => {
-  return { furnitures: state.furnitures };
-};
-
-export default connect(mapStateToProps)(App);
+export default App;

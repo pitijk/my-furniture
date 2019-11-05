@@ -1,12 +1,19 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = props => {
   return (
     <footer>
       <div className="footer__left">
-        <a href="/">terms of service</a>
-        <a href="/">privacy policy</a>
-        <a href="/">return policy</a>
+        <Link to="/terms-of-service" className="link">
+          terms of service
+        </Link>
+        <Link to="/privacy-policy" className="link">
+          privacy policy
+        </Link>
+        <Link to="/return-policy" className="link">
+          return policy
+        </Link>
       </div>
       <div className="footer__right">
         <p>
