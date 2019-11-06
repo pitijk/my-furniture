@@ -1,4 +1,9 @@
-import { ADD_NEW_FURNITURE } from "../types";
+import {
+  ADD_NEW_FURNITURE,
+  ADD_TO_CART,
+  DELETE_FROM_CART,
+  EDIT_QUANTITY
+} from "../types";
 
 export const addFurnitureType = (type, name, price, images, description) => {
   return {
@@ -10,5 +15,32 @@ export const addFurnitureType = (type, name, price, images, description) => {
       images,
       description
     }
+  };
+};
+
+export const addToCart = (name, price, quantity) => {
+  console.log(typeof quantity);
+  return {
+    type: ADD_TO_CART,
+    overload: {
+      name,
+      price,
+      quantity
+    }
+  };
+};
+
+export const deleteFromCart = name => {
+  return {
+    type: DELETE_FROM_CART,
+    name
+  };
+};
+
+export const editQuantity = (name, quantity) => {
+  return {
+    type: EDIT_QUANTITY,
+    name,
+    quantity
   };
 };

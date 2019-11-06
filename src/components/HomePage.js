@@ -29,7 +29,7 @@ const HomePage = props => {
       <main>
         <div className="title">
           <h1>my</h1>
-          <h1>furniture.</h1>
+          <h1>furnitures.</h1>
         </div>
         <i
           onClick={() =>

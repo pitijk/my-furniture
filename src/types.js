@@ -1,1 +1,4 @@
 export const ADD_NEW_FURNITURE = "ADD_NEW_FURNITURE";
+export const ADD_TO_CART = "ADD_TO_CART";
+export const DELETE_FROM_CART = "DELETE_FROM_CART";
+export const EDIT_QUANTITY = "EDIT_QUANTITY";

@@ -1,8 +1,7 @@
 import "../sass/index.scss";
 
 import React from "react";
-import { Router, Route, Switch } from "react-router-dom";
-import history from "../history";
+import { HashRouter, Route, Switch } from "react-router-dom";
 
 import Footer from "./Footer";
 import HomePage from "./HomePage";
@@ -14,7 +13,7 @@ import ReturnPolicy from "./ReturnPolicy";
 const App = props => {
   return (
     <>
-      <Router history={history}>
+      <HashRouter basename="/">
         <Switch>
           <Route path="/" exact component={HomePage} />
           <Route path="/terms-of-service" exact component={TermsOfService} />
@@ -23,7 +22,7 @@ const App = props => {
           <Route path="/:type/:name" component={Product} />
         </Switch>
         <Footer />
-      </Router>
+      </HashRouter>
     </>
   );
 };
