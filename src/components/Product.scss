@@ -1,0 +1,33 @@
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+
+.product__details {
+  width: 100vw;
+  padding: 1rem;
+  .title {
+    font-size: 2rem;
+    small {
+      font-size: 1.3rem;
+      color: grey;
+    }
+  }
+  form {
+    margin: 1.5rem 0;
+    display: flex;
+    .quantity {
+      border: 1px solid grey;
+      font-size: 1.2rem;
+      width: 3rem;
+      text-align: center;
+    }
+    .submit {
+      width: 100%;
+      margin-left: 1rem;
+      border: none;
+      padding: 0.5rem;
+      background-color: orangered;
+      color: white;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+  }
+}

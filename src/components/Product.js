@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { connect } from "react-redux";
 import ImageGallery from "react-image-gallery";
 import { addToCart } from "../actions";
+import "./Product.scss";
 
 const Product = props => {
   const [quantity, setQuantity] = useState(1);
@@ -10,8 +11,8 @@ const Product = props => {
   images.forEach(cur => items.push({ original: cur }));
   const handleSubmit = e => {
     e.preventDefault();
-    //addToCart = (name, price, quantity)
-    props.addToCart(name, price, Number(quantity));
+    //addToCart = (name, img, price, quantity)
+    props.addToCart(name, images[0], price, Number(quantity));
     setQuantity(1);
   };
   return (

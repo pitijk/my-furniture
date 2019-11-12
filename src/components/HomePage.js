@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import Carousel from "./Carousel";
+import "./HomePage.scss";
 
 const HomePage = props => {
   let fisrtSection;

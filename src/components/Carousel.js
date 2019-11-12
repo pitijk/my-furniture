@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Carousel.scss";
+
 // passed through props: collection, type
 const Carousel = props => {
   return (

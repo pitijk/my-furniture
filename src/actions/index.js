@@ -18,12 +18,12 @@ export const addFurnitureType = (type, name, price, images, description) => {
   };
 };
 
-export const addToCart = (name, price, quantity) => {
-  console.log(typeof quantity);
+export const addToCart = (name, img, price, quantity) => {
   return {
     type: ADD_TO_CART,
     overload: {
       name,
+      img,
       price,
       quantity
     }
