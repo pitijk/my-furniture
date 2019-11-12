@@ -4,7 +4,7 @@ import "./Footer.scss";
 
 const Footer = props => {
   return (
-    <footer>
+    <footer className="footer">
       <div className="footer__left">
         <Link to="/terms-of-service" className="link">
           terms of service

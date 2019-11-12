@@ -27,7 +27,7 @@ const HomePage = props => {
 
   return (
     <>
-      <main>
+      <main className="main">
         <div className="title">
           <h1>my</h1>
           <h1>furnitures.</h1>

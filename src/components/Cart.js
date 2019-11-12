@@ -39,7 +39,7 @@ const Cart = props => {
         <h2 className="cart__title">Cart</h2>
       </div>
       <ul className="cart__products">{renderProducts()}</ul>
-      <h3>{`Total price: ${props.totalValue}`}</h3>
+      <h3 className="price">{`Total price: ${props.totalValue}`}</h3>
     </div>
   );
 };

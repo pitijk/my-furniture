@@ -10,9 +10,9 @@ const Navbar = props => {
   const handleScroll = () => {
     const curPosition = window.pageYOffset;
     let visible = prevPosition > curPosition;
-    if (curPosition === 0) {
-      visible = false;
-    }
+    // if (curPosition === 0) {
+    //   visible = false;
+    // }
     setPrevPosition(curPosition);
     setVisible(visible);
   };

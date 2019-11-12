@@ -1,4 +1,4 @@
-footer {
+.footer {
   margin-top: 1rem;
   padding: 1rem;
   background-color: rgb(47, 47, 47);
@@ -6,7 +6,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
-  .footer__left {
+  &__left {
     margin-bottom: 1rem;
 
     .link {
@@ -15,10 +15,9 @@ footer {
       font-size: 1rem;
       display: block;
       margin-top: 1rem;
-
-      &:hover {
-        color: darken($color: white, $amount: 20);
-      }
+    }
+    link:hover {
+      color: darken($color: white, $amount: 20);
     }
   }
 
